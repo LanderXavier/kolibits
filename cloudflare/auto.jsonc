@@ -1,0 +1,9 @@
+// Worker de solo archivos para auto.kolibits.com
+{
+  "name": "kolibits-auto",
+  "compatibility_date": "2025-09-01",
+  "assets": { "directory": "../auto.kolibits.com" },
+  "routes": [
+    { "pattern": "auto.kolibits.com", "custom_domain": true }
+  ]
+}

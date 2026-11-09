@@ -1,0 +1,10 @@
+# Cabeceras que aplica Cloudflare al publicar (en Docker las pone nginx)
+/*
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+
+/assets/*
+  Cache-Control: public, max-age=604800
+
+/contacto.json
+  Cache-Control: no-cache

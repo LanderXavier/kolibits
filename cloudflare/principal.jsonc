@@ -1,0 +1,12 @@
+// Worker de solo archivos para kolibits.com y www.kolibits.com.
+// Sirve la MISMA carpeta que auto.kolibits.com: la landing de automatizaciones
+// es lo que la gente encuentra al buscar «Kolibits». La tienda va aparte, cuando exista.
+{
+  "name": "kolibits-principal",
+  "compatibility_date": "2025-09-01",
+  "assets": { "directory": "../auto.kolibits.com" },
+  "routes": [
+    { "pattern": "kolibits.com", "custom_domain": true },
+    { "pattern": "www.kolibits.com", "custom_domain": true }
+  ]
+}

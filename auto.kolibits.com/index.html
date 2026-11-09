@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <title>Automatización con IA para negocios y profesionales en Ecuador | Kolibits</title>
+  <meta name="description" content="Automatizamos tareas repetitivas con IA para negocios y profesionales. Somos de Ecuador y trabajamos en remoto. Diagnóstico gratis de 20 minutos.">
+  <link rel="canonical" href="https://kolibits.com/">
+  <meta name="theme-color" content="#050E24">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Kolibits">
+  <meta property="og:locale" content="es_EC">
+  <meta property="og:url" content="https://kolibits.com/">
+  <meta property="og:title" content="Deja de hacer a mano lo que se repite | Kolibits">
+  <meta property="og:description" content="Consultoría y automatización con IA para empresas, emprendimientos y profesionales. De Ecuador para donde lo necesites, con trabajo en remoto. Diagnóstico gratis.">
+  <meta property="og:image" content="https://kolibits.com/assets/compartir.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preload" href="assets/Sora-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/Sora-Bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="icon" href="assets/favicon.ico">
+  <link rel="apple-touch-icon" href="assets/favicon-180.png">
+  <link rel="stylesheet" href="styles.css?v=7">
+  <script>document.documentElement.classList.add("js");</script>
+</head>
+<body>
+  <header class="barra">
+    <div class="barra-interior">
+      <a class="barra-logo" href="https://kolibits.com" data-sitio="kolibits.com" aria-label="Ir a Kolibits">
+        <img src="assets/logo-horizontal-para-fondo-oscuro.svg" alt="Kolibits" width="150" height="44">
+      </a>
+      <nav class="barra-nav" aria-label="Secciones">
+        <a href="#demo">Ejemplo</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#como-funciona">Cómo funciona</a>
+        <a href="#preguntas">Preguntas</a>
+      </nav>
+      <a class="boton boton-compacto" data-contacto="whatsapp" href="https://wa.me/593963017682">WhatsApp</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="inicio">
+      <div class="inicio-texto">
+        <h1>Deja de hacer a mano lo que se repite.</h1>
+        <p>Elegimos la tarea que más tiempo te quita y la dejamos funcionando sola, con las herramientas que ya usas.</p>
+        <div class="acciones">
+          <a class="boton" data-contacto="whatsapp" href="https://wa.me/593963017682">Pedir diagnóstico gratis</a>
+          <a class="boton boton-secundario" href="#demo" data-reproducir>Mirar el ejemplo</a>
+        </div>
+        <p class="nota">
+          <svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path d="M5 12.5l4.2 4.2L19 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          Diagnóstico gratis de 20 minutos. Sin compromiso.
+        </p>
+        <p class="nota">
+          <svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><circle cx="12" cy="12" r="6.2" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="12" cy="12" r="2" fill="currentColor"/></svg>
+          Somos de Ecuador y trabajamos en remoto a cualquier parte.
+        </p>
+      </div>
+
+    </section>
+
+    <!-- Todo lo que entra, resumido: el papeleo entra, la IA lo entiende y queda en un tablero.
+         El HTML muestra el estado final con datos de cobranzas; pipeline.js llena y anima el resto. -->
+    <section class="seccion demo-seccion" id="demo">
+      <div class="demo-cabecera">
+        <h2>Todo lo que entra, resumido.</h2>
+        <span class="pildora">Simulación</span>
+      </div>
+      <p class="demo-bajada">Elige cómo entra el papeleo de tu negocio y mira cómo se lee solo y queda resumido, sin que nadie copie nada a mano.</p>
+
+      <div class="demo-casos" role="group" aria-label="Elige tu caso">
+        <button type="button" class="chip" data-dolor="cobranzas" aria-pressed="true">Cobranzas pendientes</button>
+        <button type="button" class="chip" data-dolor="soporte" aria-pressed="false">Soporte postventa</button>
+        <button type="button" class="chip" data-dolor="leads" aria-pressed="false">Extracción de leads</button>
+      </div>
+
+      <div class="demo-panel" data-flujo-demo>
+        <div class="demo-escena">
+          <div class="carril" data-carril="entrada">
+            <h3 class="carril-titulo">Llega el papeleo</h3>
+            <ul class="demo-docs">
+              <li class="doc">
+                <span class="doc-tipo">PDF</span>
+                <span class="doc-texto">Factura A-118 · $1.426,00</span>
+              </li>
+              <li class="doc">
+                <span class="doc-tipo">PDF</span>
+                <span class="doc-texto">Factura A-121 · $380,50</span>
+              </li>
+              <li class="doc">
+                <span class="doc-tipo">Correo</span>
+                <span class="doc-texto">«¿Cómo la puedo pagar?»</span>
+              </li>
+              <li class="doc">
+                <span class="doc-tipo">Planilla</span>
+                <span class="doc-texto">Clientes con saldo pendiente</span>
+              </li>
+            </ul>
+          </div>
+          <div class="escena-flecha" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="22" height="22"><path d="M4 12h15m-5-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="carril" data-carril="proceso">
+            <h3 class="carril-titulo">Se entiende solo</h3>
+            <div class="proceso-nucleo">
+              <span class="nucleo-icono" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="18" height="18"><path d="m12 4 1.7 4.3L18 10l-4.3 1.7L12 16l-1.7-4.3L6 10l4.3-1.7L12 4z" fill="currentColor"/></svg>
+              </span>
+              <strong>IA + tu sistema</strong>
+            </div>
+            <ol class="proceso-pasos">
+              <li>Lee cada documento al llegar</li>
+              <li>Consulta el saldo real en tu sistema</li>
+              <li>Empareja la pregunta con su factura</li>
+              <li>Redacta el aviso con el dato exacto</li>
+            </ol>
+          </div>
+          <div class="escena-flecha" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="22" height="22"><path d="M4 12h15m-5-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="carril" data-carril="resumen">
+            <h3 class="carril-titulo">Y queda resumido</h3>
+            <div class="tablero">
+              <dl class="tablero-cifras">
+                <div><dd class="tablero-valor">14</dd><dt class="tablero-rotulo">Avisos enviados esta semana</dt></div>
+                <div><dd class="tablero-valor">$6.214</dd><dt class="tablero-rotulo">Saldo en seguimiento</dt></div>
+                <div><dd class="tablero-valor">3,5 h</dd><dt class="tablero-rotulo">De copia y pegado guardadas</dt></div>
+              </dl>
+              <div class="tablero-grafico">
+                <div class="tablero-barras" data-barras>
+                  <span style="--h:35%"></span>
+                  <span style="--h:55%"></span>
+                  <span style="--h:45%"></span>
+                  <span style="--h:70%"></span>
+                  <span style="--h:62%"></span>
+                  <span style="--h:88%"></span>
+                  <span style="--h:40%"></span>
+                </div>
+                <span class="tablero-caption" data-barras-caption>Avisos por día, esta semana</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <p class="flujo-detalle">
+          <span data-detalle aria-live="polite">Los avisos salieron solos, con el saldo exacto, y quedó registrado quién los recibió.</span>
+        </p>
+        <button type="button" class="flujo-repetir" data-repetir>Repetir</button>
+        <p class="demo-nota">Simulación con datos de ejemplo. No hay conexiones reales.</p>
+      </div>
+    </section>
+
+    <ul class="franja reveal" aria-label="Cómo trabajamos">
+      <li><strong>Cada paso queda a la vista.</strong><span>Sabes qué dato entra, quién lo procesa y dónde termina.</span></li>
+      <li><strong>Con tus programas de siempre.</strong><span>Excel, Google Sheets, Gmail, WhatsApp o el sistema que ya usan en tu empresa.</span></li>
+      <li><strong>Y con revisión humana.</strong><span>Lo delicado lo revisa una persona antes de darlo por bueno.</span></li>
+    </ul>
+
+    <section class="seccion reveal">
+      <h2>Doce segundos para entenderlo</h2>
+      <p class="entrada">Un ejemplo rápido de cómo Kolibits convierte una tarea repetitiva en un flujo que corre solo.</p>
+      <video aria-label="Anuncio de Kolibits: automatiza lo repetitivo" src="assets/video-pagina.mp4" poster="assets/video-pagina-portada.jpg" controls playsinline preload="none" width="1920" height="1080"></video>
+    </section>
+
+    <section class="seccion reveal" id="servicios">
+      <h2>Lo que solemos automatizar</h2>
+      <p class="entrada">Para empresas, emprendimientos y profesionales. Si una tarea se repite siempre igual, normalmente hay una forma más simple de hacerla.</p>
+      <dl class="lista-servicios">
+        <div><dt>Facturas y documentos</dt><dd>Extraer sus datos, pasarlos a tu planilla y pedir a tus clientes lo que falta.</dd></div>
+        <div><dt>Recordatorios</dt><dd>Avisos de turnos, pagos o vencimientos que salen solos por correo o mensaje.</dd></div>
+        <div><dt>Reportes</dt><dd>Resúmenes semanales o mensuales armados con tus datos, sin copiar a mano.</dd></div>
+        <div><dt>Consultas frecuentes</dt><dd>Respuestas a las preguntas de siempre, con ayuda de IA, para que nadie quede sin contestar.</dd></div>
+      </dl>
+    </section>
+
+    <section class="seccion reveal" id="como-funciona">
+      <h2>Cómo trabajamos</h2>
+      <p class="entrada">Sin proyectos eternos. Empezamos por una tarea, la dejamos funcionando y luego seguimos con la siguiente.</p>
+      <ol class="pasos">
+        <li><h3>Diagnóstico gratis</h3><p>Una charla de 20 minutos sobre tu día a día. Te señalamos tres tareas que podrías automatizar.</p></li>
+        <li><h3>Automatizamos una tarea</h3><p>Empezamos por la que más tiempo te quita, con precio y plazo definidos antes de empezar.</p></li>
+        <li><h3>La mantenemos</h3><p>Si quieres, la cuidamos con un plan mensual y la ajustamos cuando tu negocio cambie.</p></li>
+      </ol>
+    </section>
+
+    <section class="seccion reveal" id="preguntas">
+      <h2>Preguntas frecuentes</h2>
+      <div class="faq">
+        <details>
+          <summary>¿Tengo que cambiar los programas que ya uso?</summary>
+          <p>No. Trabajamos con lo que ya tienes: Excel, Google Sheets, Gmail, WhatsApp o el sistema de tu empresa. Si algo no se puede conectar, te lo decimos antes de empezar.</p>
+        </details>
+        <details>
+          <summary>¿Qué pasa si la automatización se equivoca?</summary>
+          <p>Cada tarea está hecha para avisar cuando algo no cuadra. En lo delicado (dinero, documentos o datos de clientes) se revisa antes de continuar, y probamos el flujo contigo antes de activarlo.</p>
+        </details>
+        <details>
+          <summary>¿Qué es un webhook o una API?</summary>
+          <p>Son las conexiones que permiten que dos programas se hablen solos. Tú no tienes que tocar nada: las configuramos nosotros y tú sigues usando tus programas de siempre.</p>
+        </details>
+        <details>
+          <summary>¿Cuánto cuesta?</summary>
+          <p>Depende de la tarea. En el diagnóstico gratis te damos un precio y un plazo antes de empezar, sin sorpresas. La primera conversación no se cobra.</p>
+        </details>
+        <details>
+          <summary>¿Sirve para un negocio pequeño?</summary>
+          <p>Sí. Cuanto más se repite una tarea, más se nota el ahorro. Empezamos por una sola, la que más tiempo te quita.</p>
+        </details>
+        <details>
+          <summary>¿Trabajan con negocios que no están en Quito?</summary>
+          <p>Sí. Somos de Ecuador, así que conocemos bien el terreno, pero casi todo se hace en remoto: la reunión se da por videollamada y las herramientas son las mismas desde cualquier ciudad. Deja el resultado funcionando sin importar dónde estén.</p>
+        </details>
+      </div>
+    </section>
+
+    <section class="seccion cierre reveal">
+      <h2>Empieza por una sola tarea.</h2>
+      <p>Cuéntanos cuál te quita más tiempo. Te decimos con honestidad si se puede automatizar, cuánto tomaría y por dónde conviene empezar.</p>
+      <div class="acciones">
+        <a class="boton" data-contacto="whatsapp" href="https://wa.me/593963017682">Pedir diagnóstico gratis</a>
+        <a class="boton boton-secundario" data-contacto="correo" href="mailto:landerx345@gmail.com">Escribir por correo</a>
+      </div>
+      <p class="correo-directo">O escríbenos directamente a <a data-contacto="correo" data-rellenar href="mailto:landerx345@gmail.com">landerx345@gmail.com</a></p>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <a data-contacto="correo" data-rellenar href="mailto:landerx345@gmail.com">landerx345@gmail.com</a>
+    <a href="https://kolibits.com" data-sitio="kolibits.com">kolibits.com</a>
+    <span>Quito, Ecuador · En remoto para cualquier parte</span>
+    <span>© <span data-anio>2026</span> Kolibits</span>
+  </footer>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Kolibits Automatizaciones",
+    "url": "https://kolibits.com/",
+    "image": "https://kolibits.com/assets/compartir.jpg",
+    "description": "Consultoría y automatización con IA para empresas, emprendimientos y profesionales.",
+    "address": { "@type": "PostalAddress", "addressLocality": "Quito", "addressCountry": "EC" },
+    "areaServed": ["Quito", "Ecuador", "Servicio en remoto"]
+  }
+  </script>
+  <script src="pipeline.js?v=3"></script>
+  <script src="main.js?v=5"></script>
+</body>
+</html>

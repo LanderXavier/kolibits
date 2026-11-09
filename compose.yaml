@@ -1,0 +1,12 @@
+name: kolibits
+
+services:
+  web:
+    build: .
+    image: kolibits-web
+    ports:
+      - "127.0.0.1:8080:80"
+    # La carpeta datos/ se lee en vivo: edita datos/contacto.json y recarga la página, sin reconstruir
+    volumes:
+      - ./datos:/datos:ro
+    restart: unless-stopped
